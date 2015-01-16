@@ -6,22 +6,31 @@ body,html{
   min-height: 100%;
   height:100%;
   width:100%;
+  background-color: #5b4a3a;
 }
+
+body{
+
+
+
+}
+
 
 .off-canvas-wrap,{
   height: 100%;
   overflow: auto;
+
 }
 
 .inner-wrap{
   height:100%;
+
 }
 .main-section{
   min-height: 100%;
-  background: no-repeat center image_url('WPbg2.jpg');
-  background-size:cover;
   padding: 1em 1em 1em 1em;
-
+  background: no-repeat center image_url('WPbg2.jpg');
+  background-size: 100% 100%;
 
 }
 hr { display: block; height: 1px;
