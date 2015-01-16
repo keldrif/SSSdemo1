@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'foundation-rails'
 gem 'jquery-slick-rails'
-gem 'slick-rails'
+gem 'slick_rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'

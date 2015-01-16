@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title><%= content_for?(:title) ? yield(:title) : "Sharp Shot Shop" %></title>
+  <title><%= content_for?(:title) ? yield(:title) : "SHARP SHOT SHOP" %></title>
 
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "vendor/modernizr" %>
@@ -20,7 +20,7 @@
     <nav class="top-bar hide-for-small"  style= "font-family: rio_ororegular" data-topbar role="navigation" >
       <ul class="title-area">
         <li class="name">
-          <h1 style="font-family: rio_ororegular; font-size: 1.5rem"><%= link_to 'Sharp Shot Shop', page_home_path %></h1>
+          <h1 style="font-family: rio_ororegular; font-size: 1.35rem"><%= link_to 'SHARP SHOT SHOP', page_home_path %></h1>
         </li>
         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -29,14 +29,14 @@
       <section class="top-bar-section">
         <!-- Right Nav Section -->
         <ul class="right">
-          <li><%= link_to "about us", page_about_path, style:"font-family: rio_ororegular; font-size: 1.25rem" %></li>
-          <li><%= link_to "contact us", page_contact_path, style:"font-family: rio_ororegular; font-size: 1.25rem" %></li>
+          <li><%= link_to "about us", page_about_path, style:"font-family: rio_ororegular; font-size: 1.15rem" %></li>
+          <li><%= link_to "contact us", page_contact_path, style:"font-family: rio_ororegular; font-size: 1.15rem" %></li>
           <li class="has-dropdown">
-            <a href="#" style="font-family:rio_ororegular; font-size: 1.25rem">More</a>
+            <a href="#" style="font-family:rio_ororegular; font-size: 1.15rem">More</a>
             <ul class="dropdown">
-              <li><%= link_to "Brands", page_brands_path, style:"font-family: rio_ororegular; font-size: 1.25rem" %></li>
-              <li><%= link_to "Specialty", page_specialty_path, style:"font-family: rio_ororegular; font-size: 1.25rem" %></li>
-              <li><%= link_to "Gallery", page_gallery_path, style:"font-family: rio_ororegular; font-size: 1.25rem" %></li>
+              <li><%= link_to "Brands", page_brands_path, style:"font-family: rio_ororegular; font-size: 1.15rem" %></li>
+              <li><%= link_to "Specialty", page_specialty_path, style:"font-family: rio_ororegular; font-size: 1.15rem" %></li>
+              <li><%= link_to "Gallery", page_gallery_path, style:"font-family: rio_ororegular; font-size: 1.15rem" %></li>
             </ul>
           </li>
         </ul>
@@ -56,7 +56,7 @@
       </section>
 
       <section class="middle tab-bar-section">
-        <h1 class="title" style="font-family: rio_ororegular">SHARP SHOT SHOP</h1>
+        <h1 class="title" style="font-family: rio_ororegular"><%= link_to 'SHARP SHOT SHOP', page_home_path%></h1>
       </section>
 
     </nav>
@@ -120,10 +120,9 @@
 
 </script>
 </body>
-
-
-    <a class="exit-off-canvas"></a>
 </html>
+<a class="exit-off-canvas"></a>
+
 <!-- End Off Canvas Menu -->
 
 

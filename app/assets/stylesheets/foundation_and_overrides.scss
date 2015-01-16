@@ -95,33 +95,33 @@ $column-gutter: rem-calc(15);
 // $fonts-weight-normal: normal !default;
 // $fonts-weight-bold: bold !default;
 
-// $white       : #FFFFFF;
-// $ghost       : #FAFAFA;
-// $snow        : #F9F9F9;
-// $vapor       : #F6F6F6;
-// $white-smoke : #F5F5F5;
-// $silver      : #EFEFEF;
-// $smoke       : #EEEEEE;
-// $gainsboro   : #DDDDDD;
-// $iron        : #CCCCCC;
-// $base        : #AAAAAA;
-// $aluminum    : #999999;
-// $jumbo       : #888888;
-// $monsoon     : #777777;
-// $steel       : #666666;
-$charcoal    : #555555;
-// $tuatara     : #444444;
-$oil         : #333333;
-// $jet         : #222222;
-// $black       : #000000;
+ $white       : #FFFFFF;
+ $ghost       : #FAFAFA;
+ $snow        : #F9F9F9;
+ $vapor       : #F6F6F6;
+ $white-smoke : #F5F5F5;
+ $silver      : #EFEFEF;
+ $smoke       : #EEEEEE;
+ $gainsboro   : #DDDDDD;
+ $iron        : #CCCCCC;
+ $base        : #AAAAAA;
+ $aluminum    : #999999;
+ $jumbo       : #888888;
+ $monsoon     : #777777;
+ $steel       : #666666;
+ $charcoal    : #555555;
+ $tuatara     : #444444;
+ $oil         : #333333;
+ $jet         : #222222;
+ $black       : #000000;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
+ $primary-color: #008CBA;
+ $secondary-color: #e7e7e7;
+ $alert-color: #f04124;
+ $success-color: #43AC6A;
+ $warning-color: #f08a24;
+ $info-color: #a0d3e8;
 
 // We use these to control various global styles
 // $body-bg: $white;
@@ -255,8 +255,8 @@ $oil         : #333333;
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
-// $anchor-fonts-color: $primary-color;
-// $anchor-fonts-color-hover: scale-color($primary-color, $lightness: -14%);
+$anchor-fonts-color: #5b4a3a;
+$anchor-fonts-color-hover: scale-color(#5b4a3a, $lightness: -14%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
@@ -803,7 +803,7 @@ $oil         : #333333;
 // 18. Off-canvas
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-off-canvas-classes: $include-html-classes;
+ $include-html-off-canvas-classes: $include-html-classes;
 
  $tabbar-bg: #5b4a3a;
 // $tabbar-height: rem-calc(45);
