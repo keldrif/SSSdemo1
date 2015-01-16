@@ -21,9 +21,20 @@ body,html{
   background: no-repeat center;
   background-size:cover;
   padding: 3em 1.5em 1.5em 1.5em;
-  background-image: url("WPbg.jpg");
+  background-image: url("WPbg2.jpg");
   background-repeat: no-repeat;
 
+
+}
+hr { display: block; height: 1px;
+  border: 20px; border-top: 4px solid #000000;
+  margin: 1em 1em 1em 1em; padding: 0 ;
+}
+
+.panel {
+
+background-color: rgba(132, 107, 77, 0.51);
+  border: none;
 
 }
 
