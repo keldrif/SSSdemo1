@@ -1,0 +1,53 @@
+<div class="row>">
+  <div class="small-11 small-centered columns">
+
+
+    <h1>Listing products</h1>
+
+  </div>
+
+
+</div>
+
+<div class="row>">
+      <div class="small-11 small-centered large-centered columns">
+
+    <table>
+      <thead>
+      <tr>
+        <th style="color: #ffffff">Name</th>
+        <th style="color: #ffffff">Price</th>
+        <th style="color: #ffffff">Description</th>
+        <!--<th width="25">Cost</th>-->
+        <!--<th width="25">Qty</th>-->
+        <th style="color: #ffffff" width="75" >Image</th>
+        <!--<th width="25">Brand</th>-->
+        <!--<th width="25" colspan="3">admin options</th>-->
+      </tr>
+      </thead>
+
+      <tbody>
+      <% @products.each do |product| %>
+          <tr>
+            <td><%= product.brand %><br><%= link_to product.name, product %></td>
+            <td><%= link_to product.price, product %></td>
+            <td><%= link_to (product.description.truncate (100)) , product %></td>
+            <!--<td><%= product.cost %></td>-->
+            <!--<td><%= product.qty %></td>-->
+            <td><%= link_to (image_tag product.image), product %></td>
+            <!--<td><%= product.brand %></td>-->
+            <!--<td><%= link_to 'Show', product %></td>-->
+            <!--<td><%= link_to 'Edit', edit_product_path(product) %></td>-->
+            <!--<td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+      </div>
+
+
+</div>
+
+    <br>
+
+    <h3><%= link_to 'New Product', new_product_path %></h3>

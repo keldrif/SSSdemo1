@@ -1,0 +1,117 @@
+<p id="notice"><%= notice %></p>
+
+<!--
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @product.cost %>
+</p>
+
+<p>
+  <strong>Qty:</strong>
+  <%= @product.qty %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @product.image %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @product.brand %>
+</p>
+
+-->
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+
+<!-- Product Images and Details -->
+<div class="row">
+  <div class="large-5 columns">
+    <%= @product.name %>
+  </div></div>
+<div class="row">
+  <hr>
+  <!--
+    <div class="large-2 columns">
+      <img src="http://placehold.it/400x300&text=[img]">
+      <br>
+      <img src="http://placehold.it/400x300&text=[img]">
+      <br>
+      <img src="http://placehold.it/400x300&text=[img]">
+      <br>
+      <img src="http://placehold.it/400x300&text=[img]">
+    </div>
+  -->
+
+  <div class="large-5 columns">
+    <%= image_tag @product.image, size: "300" %>
+    </div>
+  <div class="large-5 columns">
+    <h4>brand:</h4>
+    <p>  <%= @product.brand %>
+    </p>
+
+    <h4>Description:</h4>
+    <p>  <%= @product.description %>
+    </p>
+
+    <div class="panel">
+      <h5>  <%= @product.name %>
+      </h5>
+      <h6 class="subheader">  <strong>Price:</strong>
+        <%= @product.price %>
+      </h6>
+      <a href="#" class="small button">Add to Cart</a>
+    </div>
+
+  </div>
+</div>
+
+<div class="row">
+  <hr/>
+  <div class="large-6 columns">
+    <h4>This could be a content section.</h4>
+    <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
+    </p>
+  </div>
+  <div class="large-6 columns">
+    <h4>This could also be a content section.</h4>
+    <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
+  </div>
+</div>
+
+<hr>
+<h4>You might also like:</h4>
+<div class="row">
+  <div class="small-3 columns">
+    <a href="/products/5"><img alt=" 39"  src="http://www.triplek.com/marketing/WEBSITE-DEALERS/ART_II/_39.jpg"  height="100" /></a>
+  </div>
+  <div class="small-3 columns">
+    <a href="/products/6"><img alt=" 39"  src="http://www.triplek.com/marketing/WEBSITE-DEALERS/ART_II/249.jpg"  height="100" /></a>
+  </div>
+  <div class="small-3 columns">
+    <a href="/products/7"><img alt=" 39"  src="http://www.triplek.com/marketing/WEBSITE-DEALERS/ART_II/6034.jpg" height="100" /></a>
+  </div>
+  <div class="small-3 columns">
+    <a href="/products/9"><img alt=" 39"  src="http://www.triplek.com/marketing/WEBSITE-DEALERS/ART_II/_276-277-278.jpg" height="100" /></a>
+  </div>
+</div>
+
+
+
