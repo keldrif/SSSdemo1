@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'brands/armalite'
+
+  get 'brands/ruger'
+
+  get 'brands/triplek'
+
+  get 'brands/stagarms'
+
+  get 'brands/glock'
+
+  get 'brand/main'
+
+  get 'brand/info'
+
   resources :products
 
   get 'page/contact'
