@@ -1,43 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<!--
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+<!-- <%= link_to 'Edit', edit_product_path(@product) %> | -->
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-  <strong>Cost:</strong>
-  <%= @product.cost %>
-</p>
-
-<p>
-  <strong>Qty:</strong>
-  <%= @product.qty %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @product.image %>
-</p>
-
-<p>
-  <strong>Brand:</strong>
-  <%= @product.brand %>
-</p>
-
--->
-<%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
 
 <!-- Product Images and Details -->
@@ -60,8 +24,8 @@
   -->
 
   <div class="large-5 columns">
-    <%= image_tag @product.image, size: "300" %>
-    </div>
+    <%= image_tag @product.image, class: "show_img" %>
+  </div>
   <div class="large-5 columns">
     <h4>brand:</h4>
     <p>  <%= @product.brand %>
@@ -97,6 +61,86 @@
 
 <hr>
 <h4>You might also like:</h4>
+<div class="row>">
+  <div class="small-11 small-centered large-centered columns">
+
+    <div class="row">
+      <div class=" small-12 large-11 large-centered columns">
+        <div class="slider variable-width">
+          <% @product_s.each do |product| %>
+              <div>
+                <!--<%= link_to (product.description.truncate (100)) , product %>-->
+                <!--<td><%= product.cost %></td>-->
+                <!--<td><%= product.qty %></td>-->
+                <%= link_to (image_tag product.image), product %>
+                <!--<td><%= product.brand %></td>-->
+                <!--<td><%= link_to 'Show', product %></td>-->
+                <!--<td><%= link_to 'Edit', edit_product_path(product) %></td>-->
+                <!--<td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+              </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<!--<% params.each do |key, value| %>-->
+    <!--<%= simple_format ('<h3>' + key + '&nbsp' + value + '<br>' + '</h3>') %>-->
+
+<!--<% end %>-->
+
+<script>
+    $(document).ready(function (e) {
+        window.slick = $('.variable-width').slick({
+            accessibility: true,
+            adaptiveHeight: false,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            arrows: false,
+            asNavFor: null,
+            appendArrows: null,
+            prevArrow: null,
+            nextArrow: null,
+            centerMode: true,
+            centerPadding: '30px',
+            cssEase: 'ease',
+            customPaging: null,
+            dots: false,
+            draggable: true,
+            fade: false,
+            focusOnSelect: true,
+            easing: 'linear',
+            infinite: false,
+            initialSlide: 3,
+            lazyLoad: 'ondemand',
+            onBeforeChange: null,
+            onAfterChange: null,
+            onInit: null,
+            onReInit: null,
+            onSetPosition: null,
+            pauseOnHover: true,
+            pauseOnDotsHover: false,
+            respondTo: 'slider',
+            responsive: [],
+            slide: 'div',
+            slidesToShow: 'auto',
+            slidesToScroll: 1,
+            speed: 300,
+            swipe: true,
+            swipeToSlide: false,
+            touchMove: true,
+            touchThreshold: 10,
+            useCSS: true,
+            variableWidth: true,
+            vertical: false,
+            rtl: false
+        });
+    });</script>
+
+<!--
 <div class="row">
   <div class="small-3 columns">
     <a href="/products/5"><img alt=" 39"  src="http://www.triplek.com/marketing/WEBSITE-DEALERS/ART_II/_39.jpg"  height="100" /></a>
@@ -110,7 +154,7 @@
   <div class="small-3 columns">
     <a href="/products/9"><img alt=" 39"  src="http://www.triplek.com/marketing/WEBSITE-DEALERS/ART_II/_276-277-278.jpg" height="100" /></a>
   </div>
-</div>
+-->
 
 
 

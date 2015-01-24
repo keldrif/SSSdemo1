@@ -1,3 +1,9 @@
+.moble-nav-bar{
+
+  color: #EEEEEE;
+
+}
+
 @font-face {
   font-family: 'Pacifico';
   src: url('pacifico.eot');
@@ -14,7 +20,7 @@
 .variable-width .slick-slide p { background: #fff; height: 250px; color:#3498db; margin: 5px; line-height: 100px; }
 .button{background: #5b4a3a;color:#fff;display:block;font-size:16px;margin:20px auto;padding:20px;text-align:center;text-decoration:none;width:48%;}
 .buttons{padding:0 20px 20px; margin-bottom: 10px;}
-.buttons .button{background:#FFF;color:#3498db;float:left;margin:5px;}
+.buttons .button{background:#FFF;color: #724a44;float:left;margin:5px;}
 .center .slick-center h3{-moz-transform:scale(1.08);-ms-transform:scale(1.08);-o-transform:scale(1.08);-webkit-transform:scale(1.08);color:#e67e22;opacity:1;transform:scale(1.08);}
 .center h3{opacity:0.8;transition:all 300ms ease;}
 .content{margin:auto;padding:20px;width:600px;}
@@ -22,7 +28,7 @@
 .destroy{font-weight:400;margin-top:40px;}
 .features{display:block;list-style-type:none;margin-top:30px;padding:0;text-align:center;}
 .features li{margin:20px 0;}
-.filter .button{background:#FFF;color:#3498db; margin-bottom: 40px;}
+.filter .button{background:#FFF;color: #724a44; margin-bottom: 40px;}
 .fixed-header{background:#FFF;box-shadow:2px 0 5px rgba(0,0,0,0.5);display:none;padding:10px;position:fixed;top:0;width:100%;z-index:10000;}
 .fixed-header .header-content{margin:auto;width:600px;}
 .fixed-header .subheading{display:none;}
@@ -34,7 +40,7 @@
 .more,.button.first{margin-top:40px;}
 .red{background:#e74c3c;color:#fff;}
 .slick-slide .image{padding:10px;}
-.slick-slide img{border:5px solid #4d3b28;display:block;width:100%;}
+.slick-slide img{border:5px solid #4d3b28;display:block;}
 .slick-slide img.slick-loading{border:0 }
 .slick-slider{margin:30px auto 50px;}
 .subheading{color:#555;font-size:12px;font-style:italic;font-weight:400;margin:10px auto;text-align:center;}
@@ -42,8 +48,8 @@
 .white pre,.white hr{background:#3498db;}
 code{color:#000; overflow-x: scroll;}
 
-a{color: #fbf9ff;}
-a:hover{color: #413229
+a{color: #000000}
+a:hover{color: #8b5a00
 }
 
 p{font-size:18px;font-weight:700;line-height:1.5;margin-bottom:40px;text-align:center;}
@@ -86,3 +92,4 @@ ul.nav li a{font-size:12px;text-decoration:none;}
 //  table.settings td:nth-of-type(3):before{content: 'Default: '; font-weight: bold;}
 //  table.methods td:nth-of-type(2):before{content: 'Arguments: '; font-weight: bold;}
 }
+
