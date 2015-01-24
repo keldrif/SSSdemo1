@@ -6,49 +6,39 @@
 
 <!-- Product Images and Details -->
 <div class="row">
-  <div class="large-5 columns">
-    <%= @product.name %>
-  </div></div>
-<div class="row">
   <hr>
-  <!--
-    <div class="large-2 columns">
-      <img src="http://placehold.it/400x300&text=[img]">
-      <br>
-      <img src="http://placehold.it/400x300&text=[img]">
-      <br>
-      <img src="http://placehold.it/400x300&text=[img]">
-      <br>
-      <img src="http://placehold.it/400x300&text=[img]">
-    </div>
-  -->
 
-  <div class="large-5 columns">
+  <div class="large-6 columns">
+
     <%= image_tag @product.image, class: "show_img" %>
-  </div>
-  <div class="large-5 columns">
-    <h4>brand:</h4>
-    <p>  <%= @product.brand %>
-    </p>
-
-    <h4>Description:</h4>
-    <p>  <%= @product.description %>
-    </p>
-
-    <div class="panel">
-      <h5>  <%= @product.name %>
-      </h5>
-      <h6 class="subheader">  <strong>Price:</strong>
-        <%= @product.price %>
-      </h6>
-      <a href="#" class="small button">Add to Cart</a>
-    </div>
+    <br>
+    <%= @product.name %>
 
   </div>
+
+<div class="large-6 columns">
+  <h4>brand:</h4>
+  <h3>  <%= @product.brand %>
+  </h3>
+
+  <h4>Description:</h4>
+  <p>  <%= @product.description %>
+  </p>
+
+  <div class="panel">
+    <h5>  <%= @product.name %>
+    </h5>
+    <h6 class="subheader">  <strong>Price:</strong>
+      <%= @product.price %>
+    </h6>
+    <a href="#" class="small button">Add to Cart</a>
+  </div>
+
+</div>
 </div>
 
 <div class="row">
-  <hr/>
+  <hr>
   <div class="large-6 columns">
     <h4>This could be a content section.</h4>
     <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
@@ -59,13 +49,14 @@
   </div>
 </div>
 
-<hr>
 <h4>You might also like:</h4>
-<div class="row>">
-  <div class="small-11 small-centered large-centered columns">
+
 
     <div class="row">
-      <div class=" small-12 large-11 large-centered columns">
+
+      <div class=" small-12 large-11 small-centered columns">
+        <hr>
+
         <div class="slider variable-width">
           <% @product_s.each do |product| %>
               <div>
@@ -84,13 +75,11 @@
     </div>
 
 
-  </div>
-</div>
 
 <!--<% params.each do |key, value| %>-->
     <!--<%= simple_format ('<h3>' + key + '&nbsp' + value + '<br>' + '</h3>') %>-->
 
-<!--<% end %>-->
+    <!--<% end %>-->
 
 <script>
     $(document).ready(function (e) {

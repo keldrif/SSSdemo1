@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require foundation
 //= require jquery.slick
-//= require slick
+// require slick
 // require turbolinks
 //= require_tree .
 
